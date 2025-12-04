@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+
+    <style>
+       /* ===========================
+   RESET & GLOBAL
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #fff;
+
+    /* Education color vars */
+    --primaryBackgroundColor: #ffffff;
+    --secondaryBackgroundColor: #f4f4f4;
+    --primaryIconColor: #3498db;
+    --primaryIconColor2: #dceeff;
+
+    --itemBorderRadius: 10px;
+    --sectionPadding: 3rem 2rem;
+}
+
+body {
+    background: var(--light-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+header {
+    background: var(--primary-color);
+    color: var(--text-light);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* ===========================
+   HOME
+=========================== */
+#home {
+    padding: 150px 20px 100px;
+    margin-top: 60px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--light-color);
+    margin-bottom: 25px;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+section {
+    padding: 80px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+.about-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text,
+.hobby-gallery {
+    flex: 1;
+    min-width: 300px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.photo-item {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #ccc;
+}
+
+/* ===========================
+   EDUCATION SECTION
+=========================== */
+.education {
+    padding: var(--sectionPadding);
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.pre-title {
+    margin: 0 auto;
+}
+
+.education-title {
+    text-align: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.education h4 {
+    margin: 1.5rem 0;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.education-icon {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    background: var(--primaryIconColor2);
+    border-radius: 0.5rem;
+}
+
+.education-icon svg {
+    fill: var(--primaryIconColor);
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+#contact p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+        
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h2 class="logo">Portofolio</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#hobby">Hobi</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section id="home">
+        <img src="img/fotoprofil.jpg" class="profile-img" alt="Foto Profil">
+        <h1>Halo, Saya Cindy</h1>
+        <p>Selamat datang di portofolio sederhana saya! ini adalah tugas</p>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+
+                    <p>
+                        halo! nama saya cindy afifah. Saya adalah seseorang yang memiliki minat luas dalam berbagai bidang. saya senang belajar hal-hal baru dan mengeksplorasi berbagai bidang  akitivitas menarik.</p>
+
+                    <p>Selain itu, saya juga memiliki beberapa hobi yang saya tekuni dalam waktu luang. Hobi-hobi ini membantu sayang untuk  tetap kreatif dan produktif. salah satu hobi saya adalah memasak, walaupun cape tapi buat saya masak salah satu healing terbaik buat saya.</p>           
+                </div>
+
+                <div class="hobby-gallery">
+                    <h3>beberapa hasil masakan saya</h3>
+                    <div class="photo-grid">
+                        <img src="img/fotomakanan1.jpg" class="photo-item">
+                        <img src="img/fotomasakan2.jpg" class="photo-item">
+                        <img src="img/fotomasakan3.jpg" class="photo-item">
+                        <img src="img/fotomakanan4.jpg" class="photo-item">
+                        <img src="img/fotomasakan5.jpg" class="photo-item">
+                        <img src="img/fotomasakan6.jpg" class="photo-item">
+                        <img src="img/fotomakanan7.jpg" class="photo-item">
+                        <img src="img/fotomasakan8.jpg" class="photo-item">
+                        <img src="img/fotomasakan9.jpg" class="photo-item">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section education -->
+  <section id="education">
+    <div class="education main-container">
+        <h3 class="pre-title">Education</h3>
+         <h1 class="section-title education-title">Education in</h1>
+
+        <div class="grid-3">
+
+            <!-- ed 1 -->
+            <div class="education">
+                <div class="education-icon">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M23 17h1v2h-6.731l2.731 4h-2.627l-2.736-4h-5.273l-2.736 4h-2.628l2.732-4h-6.732v-2h1v-16h22v16zm-2-14h-18v14h18v-14zm-1 13h-2v-1h-4v1h-10v-12h16v12zm-12.339-6.814l.957 3.571-.909.243-.692-2.584-.806.476-.028-.012-.183-.684 1.488-.964.173-.046zm3.17.763l.935-.251.207.771-.935.25.255.955-.872.233-.256-.954-.938.251-.206-.77.938-.251-.245-.915.872-.234.245.915zm3.728 1.216l-.909.243-.692-2.584-.806.476-.028-.011-.183-.685 1.488-.963.173-.047.957 3.571zm3.25-2.419l.191.712-2.476.663-.191-.712 2.476-.663zm-.271-1.013l.191.712-2.476.663-.191-.711 2.476-.664z"/>
+                    </svg>
+                </div>
+                <h4>SD</h4>
+                <p>MI Tarbiyatul khoir</p>
+            </div>
+
+            <!-- ed 2 -->
+            <div class="education">
+                <div class="education-icon">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M11 3v-3h4v2h-3v1h5v3h3v2h3v14h1v2h-24v-2h1v-14h3v-2h3v-3h4zm5 20v-6l-4-2.336-4 2.336v6h2v-5l2-1 2 1v5h2zm5-3v-2h-2v2h2zm-16 0v-2h-2v2h2zm16-4v-2h-2v2h2zm-16 0v-2h-2v2h2zm7-10c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3zm9 6v-2h-2v2h2zm-16 0v-2h-2v2h2zm7-3h2v1h-3v-3h1v2z"/>
+                    </svg>
+                </div>
+                <h4>SMP</h4>
+                <p>MTs Miftahul Huda</p>
+            </div>
+
+            <!-- ed 3 -->
+            <div class="education">
+                <div class="education-icon">
+                   <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <path d="M4.861 9.713c-.131-.146-.242-.299-.33-.459v-3.181l7.107 3.804 7.852-3.298v2.675c-.074.15-.169.294-.284.431.342.948.392 2.073.399 2.623 1.229-.437 2.398.593 2.398 2.492 0 3.208-2.462 4.017-2.561 4.053-2.414 4.776-6.276 5.147-7.404 5.147-1.128 0-4.99-.372-7.403-5.147-.1-.036-2.563-.845-2.563-4.061 0-2.003 1.289-2.917 2.4-2.48.007-.551.056-1.659.389-2.599zm13.52.669c-1.62 1.032-4.431 1.524-6.371 1.524-2.107 0-4.736-.501-6.319-1.508-.156.621-.241 1.298-.241 2.033 0 .528-.425.918-.897.918-.121 0-.244-.026-.365-.08-.06-.029-.152-.051-.256-.051-.112 0-.236.026-.344.099-.898.595-.804 3.838 1.393 4.598.219.076.403.238.509.451 2.16 4.299 5.557 4.634 6.548 4.634.99 0 4.389-.335 6.547-4.634.108-.213.291-.375.51-.451 2.197-.76 2.291-4.003 1.393-4.598-.365-.245-.632.032-.964.032-.472 0-.898-.388-.898-.918 0-.741-.085-1.424-.245-2.049zm4.619-.373h-2.99l1.012-2.002-.015-3.142-9.316 3.907-9.691-5.12 10.451-3.651 9.552 4.446v3.56l.997 2.002z"/>
+                </svg>
+                </div>
+                <h4>SMK</h4>
+                <p>SMK Tunas Teknologi</p>
+            </div>
+     </div>
+ </section>
+        </div>
+    </education>
+ </section>
+ <!-- end of education -->
+
+ <!-- Contact -->
+ <section id="contact" class="container contact-purple">
+    <h2>Hubungi Saya</h2>
+    <div class="contact-flex">
+
+        <div style="flex:1;min-width:260px;">
+            <p>Anda bisa menghubungi saya melalui informasi berikut :</p>
+            <p>📧 cindyafifah2025-m@ubs.ac.id</p>
+            <p>📱 +62 8953 6588 7266</p>
+            <p>📍 Bekasi, Jawa Barat, Indonesia</p>
+        </div>
+
+        
+    </div>
+</section>
+
+    
+
+    <footer>
+        <p>© 2025 Portofolio Cindy</p>
+    </footer>
+
+</body>
+</html>
